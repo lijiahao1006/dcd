@@ -7,8 +7,8 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/package-lock.json": true,
-        "**/.gitignore": true,
-        "**/.editorconfig": false,
-        "**/.eslintrc.js": false
+        "**/.gitignore": false,
+        "**/.editorconfig": true,
+        "**/.eslintrc.js": true
     }
 }
