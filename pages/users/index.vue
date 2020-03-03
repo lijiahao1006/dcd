@@ -1,6 +1,6 @@
 <template>
   <div>
-    我是components-----logo
+    我是 用户 子路由的首页 我没啥鸡儿用
   </div>
 </template>
 

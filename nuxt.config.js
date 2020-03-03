@@ -22,11 +22,13 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: 'green' },
+  // loading: false, // 关闭自带loading
   /*
   ** Global CSS
   */
   css: [
+    '~/assets/style/main.css',
     'element-ui/lib/theme-chalk/index.css'
   ],
   /*
@@ -46,14 +48,24 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios' // 不需要引proxy代理直接用
   ],
   /*
-  ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    proxy: true,
+    prefix: '/api', // baseURL
+    credentials: true
+  },
+  proxy: {
+    '/api/': {
+      target: 'http://127.0.0.1:3000', // 代理地址
+      changeOrigin: true,
+      pathRewrite: {
+        '^/api': ''
+      }
+    }
   },
   /*
   ** Build configuration
