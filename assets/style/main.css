@@ -1,0 +1,274 @@
+/* 路由页面切换动画 */
+.page-enter-active, .page-leave-active {
+    transition: opacity .3s;
+}
+.page-enter, .page-leave-active {
+opacity: 0;
+}
+fieldset,
+img {
+    border: 0
+}
+
+*,
+a:focus,
+input:focus {
+    outline: 0
+}
+
+a,
+body {
+    color: #333
+}
+
+.cl,
+.fix:after {
+    clear: both
+}
+
+.hm,
+.hvm {
+    left: 50%
+}
+
+*,
+.bbox,
+.layout,
+div,
+
+
+.line-clamp-2,
+.of,
+.wb {
+    text-overflow: ellipsis
+}
+
+.footer li,
+.line-clamp-2,
+.of,
+.wb,
+.wbox-flex {
+    word-wrap: break-word;
+    word-break: break-all
+}
+
+.hor-view,
+.ver-view {
+    -webkit-box-direction: normal
+}
+
+article,
+aside,
+blockquote,
+body,
+button,
+code,
+dd,
+dialog,
+div,
+dl,
+dt,
+fieldset,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+input,
+legend,
+li,
+nav,
+ol,
+p,
+pre,
+section,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+input,
+select,
+textarea {
+    font-size: 100%
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+caption,
+th {
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 500
+}
+
+li,
+ol,
+ul {
+    list-style: none
+}
+
+em,
+i {
+    font-style: normal
+}
+
+del {
+    text-decoration: line-through
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-style: normal;
+    font-weight: 500
+}
+
+img {
+    max-width: 100%
+}
+
+img,
+input {
+    vertical-align: middle
+}
+
+a {
+    text-decoration: none
+}
+
+* {
+    -webkit-tap-highlight-color: transparent
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    overflow-y: scroll
+}
+
+body {
+    min-width: 320px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, STHeiTi, sans-serif;
+    background: #f2f2f2
+}
+
+.w {
+    margin: 0 auto;
+    max-width: 15rem
+}
+
+.layout {
+    margin: .2rem
+}
+
+.pdlayout {
+    padding: .2rem .6rem
+}
+
+.fix:after {
+    display: block;
+    content: '';
+    visibility: hidden
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.dib {
+    display: inline-block
+}
+
+.hide {
+    display: none
+}
+
+.mt20 {
+    margin-top: .4rem !important
+}
+
+.mt10 {
+    margin-top: .2rem !important
+}
+
+.f12,
+.f14,
+.f16,
+.f18,
+.f20 {
+    font-size: .58rem
+}
+
+.fhalf {
+    font-size: .4rem
+}
+
+
+.font {
+    font-size: .58rem
+}
+
+.f30 {
+    font-size: .6rem
+}
+
+.tr {
+    text-align: right
+}
+
+.sn-nav-title,
+.tc {
+    text-align: center
+}
+
+.pa {
+    position: absolute
+}
+
+.pr {
+    position: relative
+}
+
+.hm,
+.hvm,
+.vm {
+    position: absolute
+}
+
+.gray6 {
+    color: #666
+}
+
+.gray9 {
+    color: #999
+}
