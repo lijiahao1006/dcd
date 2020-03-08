@@ -38,7 +38,9 @@ export default {}
 
 <style lang="scss" scoped>
 #footer{
-  background-color: rgba(114, 106, 106, 0.63);
+  background-color: #2e3951;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
   .footer-inner{
     height: 100px;
     padding: 40px 20px;

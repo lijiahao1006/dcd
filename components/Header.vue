@@ -1,13 +1,26 @@
 <template>
   <div>
-    <div class="navbar">
+    <div
+      class="navbar"
+      :style="{'backgroundColor': background}"
+    >
       <div class="container">
-        <div class="navbar-title">
-          个人博客
+        <div
+          class="navbar-title"
+          :style="{'color': color}"
+          :class="{'t': $route.name !== 'index'}"
+        >
+          LeeJoyFul
         </div>
         <div class="navbar-span">
           <ul>
-            <li v-for="(v, k) in tabdata" :key="k" :class="{'cur': $route.name == k}" @click="RouterHan(k)">
+            <li
+              v-for="(v, k) in tabdata"
+              :key="k"
+              :class="{'cur': $route.name === k, 'p': $route.name !== 'index'}"
+              :style="{'color': color}"
+              @click="RouterHan(k)"
+            >
               {{ v }}
             </li>
           </ul>
@@ -25,8 +38,24 @@ export default {
         index: '首页',
         shopping: '购物',
         users: '用户',
+        about: '关于',
         login: '登录'
-
+      }
+    }
+  },
+  computed: {
+    background () {
+      if (this.$route.name === 'index') {
+        return 'black'
+      } else {
+        return 'white'
+      }
+    },
+    color () {
+      if (this.$route.name === 'index') {
+        return '#fff'
+      } else {
+        return '#0078ff'
       }
     }
   },
@@ -40,7 +69,6 @@ export default {
 
 <style lang="scss" scoped>
 @mixin title {
-  color: #fff;
   font-weight: 550;
   height: 70px;
   margin-right: 10px;
@@ -63,13 +91,13 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
   .container{
     width: 1200px;
     height: 70px;
     // border: 1px solid springgreen;
     .navbar-title{
       @include title;
+      color: #fff;
       position: relative;
       font-size: 40px;
       width: 170px;
@@ -85,9 +113,11 @@ export default {
       }
       &:hover::before{
         width: 170px;
-        background-color: darkkhaki;
+        background-color: #fff;
         transition: all 500ms ease
-
+      }
+      &.t::before{
+        background-color: burlywood;
       }
     }
     .navbar-span{
@@ -104,7 +134,7 @@ export default {
           @include title;
           position: relative;
           width: 90px;
-          font-size: 20px;
+          font-size: 20px ;
           &.cur::before{
             @include Pseudo;
             width: 50px;
@@ -116,6 +146,9 @@ export default {
           &:hover::before{
             width: 60px;
             transition: all 500ms ease
+          }
+          &.p::before{
+            background-color: #0078ff; // 利用动态p类名。来控制伪元素的样式
           }
         }
       }

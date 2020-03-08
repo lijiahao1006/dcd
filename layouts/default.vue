@@ -30,7 +30,10 @@ export default {
   width: 100%;
 }
 .footer{
-  margin: 0 auto;
+  position: relative;
+  left: 50%;
+  margin-left: -650px;
+  margin-top: 50px;
   width: 1300px;
 }
 
