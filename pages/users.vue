@@ -22,7 +22,7 @@
 export default {
   methods: {
     routerHan (i) {
-      this.$router.push({ path: `/users/${i}` })
+      this.$router.push({ path: `/users/child${i}` })
     }
   }
 }
