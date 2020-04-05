@@ -31,6 +31,9 @@ export default {
       type: String,
       default: 'phone'
     }
+  },
+  created () {
+    console.log('woshi zi')
   }
 }
 </script>
